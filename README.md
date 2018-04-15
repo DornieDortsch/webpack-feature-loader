@@ -17,3 +17,16 @@ Open Browser http://localhost:3000/ and watch console
 npm run dev
 ```
 Open Browser http://localhost:8080/ and watch console
+
+## ToDo
+Add Babel Loader and implement feature initialisation maybe with conditioner
+* https://github.com/babel/babel-loader
+* https://github.com/rikschennink/conditioner
+
+## Resources
+* https://webpack.js.org/guides/
+* https://vuejsdevelopers.com/2017/10/30/vue-js-dynamic-imports-lazy-load/
+* https://medium.com/@kudochien/a-react-webpack-optimization-case-27da392fb3ec
+* https://iamakulov.com/notes/webpack-contextreplacementplugin/
+* https://benmccormick.org/2015/05/28/moving-past-requirejs/
+* https://www.jvandemo.com/a-10-minute-primer-to-javascript-modules-module-formats-module-loaders-and-module-bundlers/
