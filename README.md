@@ -10,7 +10,7 @@ npm install
 ```bash
 npm start
 ```
-Open Browser http://localhost:3000/ and watch console
+Open Browser http://localhost:5000/ and watch console
 
 ## Development
 ```bash
