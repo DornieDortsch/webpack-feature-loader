@@ -25,7 +25,7 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin(),
     new webpack.ContextReplacementPlugin(
-      /\//,
+      /[\/\\]/,
       path.resolve(__dirname, 'src'),
       createContextMap('./src')
     ),
