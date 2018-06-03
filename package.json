@@ -1,7 +1,7 @@
 {
-  "name": "webpack-contextreplacement-bug",
+  "name": "webpack-feature-loader-example",
   "version": "1.0.0",
-  "description": "Minimal sample project to report webpack bug with ContextReplacementPlugin while using dev-server",
+  "description": "Sample project to declarative load js features (modules) with webpack.",
   "main": "index.js",
   "scripts": {
     "start": "npm run build && npm run serve",
