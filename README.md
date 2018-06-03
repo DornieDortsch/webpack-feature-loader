@@ -18,6 +18,17 @@ npm run dev
 ```
 Open Browser http://localhost:8080/ and watch console
 
+or run to watch all tests
+
+```bash
+npm run tdd
+```
+
+## Test
+```bash
+npm test
+```
+
 ## ToDo
 Add Babel Loader and implement feature initialisation maybe with conditioner
 * https://github.com/babel/babel-loader
