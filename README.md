@@ -34,7 +34,12 @@ Add Babel Loader and implement feature initialisation maybe with conditioner
 * https://github.com/babel/babel-loader
 * https://github.com/rikschennink/conditioner
 
-## Resources
+## Tools
+* Webpack https://webpack.js.org/concepts/
+* Jest https://facebook.github.io/jest/docs/en/getting-started.html
+* Puppeteer https://github.com/smooth-code/jest-puppeteer
+
+## Loader and Module Resources
 * https://webpack.js.org/guides/
 * https://vuejsdevelopers.com/2017/10/30/vue-js-dynamic-imports-lazy-load/
 * https://medium.com/@kudochien/a-react-webpack-optimization-case-27da392fb3ec
