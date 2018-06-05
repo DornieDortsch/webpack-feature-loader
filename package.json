@@ -22,9 +22,9 @@
   "author": "Donie Dortsch",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DornieDortsch/webpack-contextreplacement-bug/issues"
+    "url": "https://github.com/DornieDortsch/webpack-feature-loader.git/issues"
   },
-  "homepage": "https://github.com/DornieDortsch/webpack-contextreplacement-bug#readme",
+  "homepage": "https://github.com/DornieDortsch/webpack-feature-loader.git#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
