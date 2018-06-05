@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DornieDortsch/webpack-contextreplacement-bug.git"
+    "url": "git+https://github.com/DornieDortsch/webpack-feature-loader.git"
   },
   "keywords": [
     "webpack"
