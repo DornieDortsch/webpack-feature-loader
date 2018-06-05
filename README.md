@@ -1,5 +1,5 @@
 # webpack-feature-loader
-Use webpack to bundle and dynamically load js features on demand.
+Sample project to declarative load js features (modules) with webpack.
 
 ## Install
 ```bash
@@ -16,7 +16,7 @@ Open Browser http://localhost:5000/ and watch console
 ```bash
 npm run dev
 ```
-Open Browser http://localhost:8080/ and watch console
+Open Browser http://localhost:5000/ and watch console
 
 or run to watch all tests
 
@@ -27,6 +27,11 @@ npm run tdd
 ## Test
 ```bash
 npm test
+```
+
+## Build
+```bash
+npm build
 ```
 
 ## ToDo
