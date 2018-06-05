@@ -10,26 +10,31 @@ const createContextMap = require('./webpack.context-map')
 const production = false
 
 module.exports = {
-  entry: './src/feature-loader.js',
+  entry: './example/index.js',
   mode: production ? 'production' : 'development',
   output: {
-    filename: 'feature-loader.js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
     chunkFilename: '[name].js'
   },
   devServer: {
+    port: 5000,
     contentBase: './dist',
     hot: !production
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: 'example/index.html'
+    }),
     new webpack.ContextReplacementPlugin(
       /[\/\\]/,
-      path.resolve(__dirname, 'src'),
-      createContextMap('./src')
-    ),
-    new webpack.NamedModulesPlugin(),
+      path.resolve(__dirname, 'example'),
+      createContextMap('./example')
+    )
+    ,
+    new webpack.NamedModulesPlugin()
+    ,
     new webpack.HotModuleReplacementPlugin()
   ]
 };
