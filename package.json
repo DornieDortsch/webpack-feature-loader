@@ -4,15 +4,13 @@
   "description": "Sample project to declarative load js features (modules) with webpack.",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && npm run serve",
+    "start": "npm run build && serve ./dist",
     "build": "webpack --config webpack.config.js",
-    "serve": "serve ./dist",
     "dev": "webpack-dev-server",
-    "pretest": "npm run build",
-    "test": "jest",
-    "test:unit": "npm run build && jest \"src/.*\\.test\\.js$\"",
-    "test:integration": "npm run build && jest \"src/.*\\.it\\.js$\"",
-    "tdd": "jest --watchAll"
+    "tdd": "jest --watchAll",
+    "test": "npm run test:unit && npm run test:integration",
+    "test:unit": "npm run build && jest \".*\\.test\\.js$\"",
+    "test:integration": "jest \".*\\.it\\.js$\""
   },
   "repository": {
     "type": "git",

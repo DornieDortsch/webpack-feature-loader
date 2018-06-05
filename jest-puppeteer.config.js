@@ -1,6 +1,6 @@
 module.exports = {
   server: {
-    command: 'serve ./dist',
-    port: 5000,
+    command: 'webpack-dev-server',
+    port: 5000
   },
 }
