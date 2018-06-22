@@ -39,7 +39,7 @@ describe('load feature with module name', () => {
 
 describe('execute feature with context', () => {
 
-    const makeLoderMock = moduleSpy => moduleName => Promise.resolve({default: moduleSpy})
+    const makeLoderMock = moduleSpy => featureName => Promise.resolve({default: moduleSpy})
 
     test('module name of context', done => {
         // Given
@@ -49,7 +49,7 @@ describe('execute feature with context', () => {
         objectUnderTest.execute(makeLoderMock(context => {
 
             // Then
-            expect(context.moduleName).toEqual('name')
+            expect(context.featureName).toEqual('name')
             done()
         }))
     })

@@ -23,7 +23,7 @@ test('find one feature',  () => {
     
     // Then
     expect(callbackMock.mock.calls.length).toBe(1);
-    expect(callbackMock.mock.calls[0][0].context.moduleName).toEqual('feature');
+    expect(callbackMock.mock.calls[0][0].context.featureName).toEqual('feature');
     expect(callbackMock.mock.calls[0][0].context.options).toEqual({foo:"bar"});
     expect(callbackMock.mock.calls[0][0].context.element).toBe(element);
 })
@@ -48,8 +48,8 @@ test('find two feature',  () => {
 
     // Then
     expect(callbackMock.mock.calls.length).toBe(2);
-    expect(callbackMock.mock.calls[0][0].context.moduleName).toBe('feature1');
-    expect(callbackMock.mock.calls[1][0].context.moduleName).toBe('feature2');
+    expect(callbackMock.mock.calls[0][0].context.featureName).toBe('feature1');
+    expect(callbackMock.mock.calls[1][0].context.featureName).toBe('feature2');
 })
 
 test('find no feature',  () => {

@@ -1,5 +1,5 @@
 const Feature = (name, value, element) => {
-    const moduleName = name.replace(/-([a-z])/g, name => name[1].toUpperCase()) //Convert foo-bar to fooBar
+    const featureName = name.replace(/-([a-z])/g, name => name[1].toUpperCase()) //Convert foo-bar to fooBar
     
     let options = null
     
@@ -15,7 +15,7 @@ const Feature = (name, value, element) => {
     }
 
     const context = {
-        moduleName: moduleName,
+        featureName: featureName,
         element: element,
         get options() {
             return lazyOptions()
@@ -25,15 +25,15 @@ const Feature = (name, value, element) => {
     return {
         context,
         execute: loader => {
-            loader(moduleName)
+            loader(featureName)
             .then(module => {
                 try {
                     module.default(context)
                 } catch(err) {
-                    console.error('executing module "' + moduleName + '" with error: ', err)
+                    console.error('executing module "' + featureName + '" with error: ', err.message)
                 }
             })
-            .catch(err => console.error('loading module "' + moduleName + '" with error: ', err))
+            .catch(err => console.error('loading module "' + featureName + '" with error: ', err.message))
         }
     }
 }
