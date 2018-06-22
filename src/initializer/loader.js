@@ -1,3 +1,3 @@
 export default name => {
-    return import(/* webpackChunkName: "feature/[request]" */ '/' + name + '.js')
+    return import(/* webpackChunkName: "feature/[request]" */ '/feature/' + name)
 }
